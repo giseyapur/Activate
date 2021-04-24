@@ -22,6 +22,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: inicio;
+  background-color: #E5E8E8;
 }
 
 #pieDePagina {
@@ -112,7 +113,7 @@ nav ul li {
 #pieDePagina {
   background-color: #4D9B4F;
   width: 99,9%;
-  height: 220px;
+  height: auto;
   border: solid;
   border-color: grey;
 }
@@ -121,15 +122,22 @@ nav ul li {
   width: 35px;
 }
 
-.block__foot {
-  float: left;
+#pieDePagina .block__foot {
   background-color: #4D9B4F;
   color: lightgrey;
   border: none;
   border-color: grey;
-  padding: 20px;
+  padding: 10px;
   width: 99,7%;
+}
+
+#pieDePagina .block__foot p {
   font-size: 15px;
+  text-decoration: none;
+}
+
+#pieDePagina .block__foot .col1 {
+  text-align: right;
 }
 
 /* diseños para el body de la sección Inicio*/
@@ -164,7 +172,7 @@ nav ul li {
 .block__descripcion {
   font-size: 20px;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   background-color: #4D9B4F;
   color: lightgrey;
   border: ridge;
@@ -190,6 +198,7 @@ nav ul li {
   color: #4D9B4F;
   background: #E5E8E8;
   font-weight: bold;
+  padding-right: 10px;
 }
 
 .prod__listas {
@@ -329,12 +338,12 @@ h3 {
 /* diseño de la seccion productos*/
 .listadoPrecios {
   background-color: #4D9B4F;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  margin: 0%;
 }
 
 .listadoPrecios img {
-  size: 50%;
+  width: 40em;
+  margin: 1em;
 }
 
 /* diseño de la seccion Contacto aplicando gradientes*/

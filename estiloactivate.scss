@@ -1,5 +1,5 @@
 *{margin: 0;
-    padding:0;
+  padding:0;
     }
 
 /*Variabes definidas a utiizar*/
@@ -15,7 +15,8 @@ body { display: grid;
     "inicio"
     "pieDePagina"; }
 .header { grid-area: header }
-.inicio { grid-area: inicio }
+.inicio { grid-area: inicio;
+          background-color: $colorg; }
 #pieDePagina { grid-area: pieDePagina }
 
  /* Header comun para todas las secciones*/
@@ -54,7 +55,7 @@ body { display: grid;
   
   .block__descripcion { font-size: 20px;
                         text-align: center;
-                        margin: 10px;
+                        margin: 20px;
                         background-color: $colorv;
                         color: lightgrey; 
 	                      border: ridge; 
@@ -70,10 +71,12 @@ body { display: grid;
           display: grid;
           grid-template-rows: 1fr;
           grid-template-columns: repeat(4, 1fr);
+          
 
           ul {color: $colorv; 
             background: $colorg; 
-            font-weight: bold;  }
+            font-weight: bold;
+            padding-right: 10px;  }
               }
 
 .prod__listas { border: double; 
@@ -160,9 +163,10 @@ body { display: grid;
 
 
 .listadoPrecios { background-color: #4D9B4F;
-                  align-content: center; 
-
-       img { size: 50%;}}
+                  margin: 0%;
+                
+                img { width: 40em;
+                      margin: 1em;} }
   
   
   /* diseño de la seccion Contacto aplicando gradientes*/
