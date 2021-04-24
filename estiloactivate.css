@@ -131,9 +131,19 @@ nav ul li {
   width: 99,7%;
 }
 
+#pieDePagina .block__foot h5 {
+  color: lightgray;
+  font-size: 16px;
+  text-decoration: blink;
+}
+
+#pieDePagina .block__foot a {
+  text-decoration: none;
+  color: lightgray;
+}
+
 #pieDePagina .block__foot p {
   font-size: 15px;
-  text-decoration: none;
 }
 
 #pieDePagina .block__foot .col1 {
