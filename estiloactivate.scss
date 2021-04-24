@@ -159,65 +159,10 @@ body { display: grid;
   /* diseño de la seccion productos*/
 
 
-.listadoPrecios { background-color: #4D9B4F;}
+.listadoPrecios { background-color: #4D9B4F;
+                  align-content: center; 
 
-.card-header {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btnn {
-  font-family: 'Open Sans', sans-serif;
-  color: $oscuro;
-  text-decoration: none;
-  width: 300px;
-  height: 50px;
-  text-align: justify;
-  margin: auto;
-  padding: 10px;
-  background-color: #c8e8ea;
-  align-content: center;
-  justify-content: center;
-  border: none;
-  border-radius: 5px;
-}
-
-.btnn:hover {
-  background-color: #fe9a84;
-  color: #f8dad0;
-}
-
-.card-body {
-  width: 90%;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: #c8e8ea;
-}
-
-.nutricion {
-  width: 90%;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: #c8e8ea;
-}
-  
-  /*.listas__precios { background-color: $colorg;
-                     font-size: 18px;
-                     font-family: 'Open Sans', sans-serif;
-                     padding: 20px;  }
-  
-  table { margin: 20px;  }
-  
-  .listadoPrecios { display:flex;
-                    align-content: center; }*/
+       img { size: 50%;}}
   
   
   /* diseño de la seccion Contacto aplicando gradientes*/
