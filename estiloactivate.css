@@ -61,6 +61,14 @@ h1 {
   padding: 10px;
 }
 
+.menu a:hover {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  color: lightgray;
+  background-color: #4D9B4F;
+  border-radius: 5px;
+}
+
 .block__header {
   background: #E5E8E8;
   position: relative;
@@ -142,6 +150,10 @@ nav ul li {
   color: lightgray;
 }
 
+#pieDePagina .block__foot a:hover {
+  text-decoration: underline;
+}
+
 #pieDePagina .block__foot p {
   font-size: 15px;
 }
@@ -208,7 +220,6 @@ nav ul li {
   color: #4D9B4F;
   background: #E5E8E8;
   font-weight: bold;
-  padding-right: 10px;
 }
 
 .prod__listas {
@@ -372,6 +383,10 @@ h3 {
   @media screen and ( min-width: 480px) and ( max-width: 780px)
   { body {} }*/
 @media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   body {
     display: -ms-grid;
     display: grid;

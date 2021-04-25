@@ -18,9 +18,14 @@ h1  {color: $colorv;
        
   
   li a {display: inline; 
-          text-decoration: none;
-          color: $colorv;
-          padding: 10px;}}
+        text-decoration: none;
+        color: $colorv;
+        padding: 10px;}
+
+    a:hover { text-decoration: bold;
+              color: lightgray;
+              background-color: $colorv;
+              border-radius: 5px;}}
   
   .block__header {background: $colorg;
       position: relative; 
