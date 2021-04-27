@@ -172,13 +172,18 @@ body { display: grid;
   
   .formulario { font-family: 'Open Sans', sans-serif;
                 padding: 10px;
-                text-align: center;
-                background-image: linear-gradient(to top, $colorv, $colorg); 
-                font-size: 20px; }
+                text-align: center ;
+                background-color:$colorv ;
+                color: $colorg;
+          h3 {color: $colorg;}
+                 }
+  .decorado {background-image: url(Imagenes/imgform.jpg);
+              height: 100px;
+              opacity: 70%;}
   
   
   
-  /* aplicando medidas a mi proyecto*/
+  /* aplicando medidas a mi proyecto linear-gradient(to top, $colorv, $colorg)*/
   
   /*{body {  }}
   

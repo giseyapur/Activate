@@ -372,12 +372,21 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#4D9B4F), to(#E5E8E8));
-  background-image: linear-gradient(to top, #4D9B4F, #E5E8E8);
-  font-size: 20px;
+  background-color: #4D9B4F;
+  color: #E5E8E8;
 }
 
-/* aplicando medidas a mi proyecto*/
+.formulario h3 {
+  color: #E5E8E8;
+}
+
+.decorado {
+  background-image: url(Imagenes/imgform.jpg);
+  height: 100px;
+  opacity: 70%;
+}
+
+/* aplicando medidas a mi proyecto linear-gradient(to top, $colorv, $colorg)*/
 /*{body {  }}
   
   @media screen and ( min-width: 480px) and ( max-width: 780px)
