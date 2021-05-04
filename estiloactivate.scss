@@ -148,7 +148,7 @@ body { display: grid;
   
   /* Agregado de flexbox a seccion pedidos*/
   
-  .pedidosPorMayor img { width: 400px; }
+  .pedidosPorMayor img { width: 500px; }
   
   .pedidosPorMayor { background: $colorg;
                      display: flex;
@@ -161,38 +161,44 @@ body { display: grid;
       .btn { a {color: $colorg;
             text-decoration: none;}}
       .btn:hover {color: $colorv;
-                  background-color: $color;}}
+                  background-color: $colorg;}}
   }
 
 
   /* diseño de la seccion productos*/
 
+  .listadoPrecios { background-color: $colorv;
+  h4 {color: $colorg;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      text-decoration: underline;
+      margin: 15px;
+       }}
+
    #accordion {
     padding: 20px;
     background-color: $colorv;
     
-    .card {width: 500px;
-           height: 100%;
+    .card {width: 90%;
+           text-align: center;
            margin-left: auto;
            margin-right: auto;
            background-color: $colorv;
-           box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     }
 
-    /*.card-header { text-decoration: none;
+    .card-header { text-decoration: none;
                    font-family: 'Open Sans', sans-serif;
                    font-size: 16px;
-                   width: 100%;*/
-
-    }
+                   width: 100%;}
 
     .btnn { text-decoration: none;
             font-family: 'Open Sans', sans-serif;
             font-size: 16px;
             line-height: 1.5;
-            width: 100%;
+            width: 80%;
             height: 30px;
             padding: 5px;
+            color: $colorg;
             background-color: $colorv;
             align-content: center;
             justify-content: center;
@@ -201,8 +207,8 @@ body { display: grid;
     }
 
     .btnn:hover {
-        background-color: $colorv;
-        color: lightgray;
+        background-color: $colorg;
+        color: $colorv;
     }
 
     .card-body {
@@ -216,13 +222,10 @@ body { display: grid;
         
     }
 
-    .foto {width: 50%;
-    }
+    .foto {width: 60%;
+    }}
 
-    .descarga { font-size: 14px;
-    }
-
-  
+    
   
   /* diseño de la seccion Contacto donde se encuentra el formulario*/
   
@@ -235,7 +238,8 @@ body { display: grid;
                  }
   .decorado {background-image: url(Imagenes/imgform.jpg);
               height: 100px;
-              opacity: 70%;}
+              opacity: 70%;
+              margin:auto;}
   
   
   

@@ -252,7 +252,7 @@ nav ul li {
 }
 
 h3 {
-  color: grey;
+  color: gray;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin: 5px;
@@ -335,7 +335,7 @@ h3 {
 
 /* Agregado de flexbox a seccion pedidos*/
 .pedidosPorMayor img {
-  width: 400px;
+  width: 500px;
 }
 
 .pedidosPorMayor {
@@ -363,19 +363,81 @@ h3 {
 }
 
 .pedidosPorMayor p .btn:hover {
-  background-color: #E5E8E8;
   color: #4D9B4F;
+  background-color: #E5E8E8;
 }
 
 /* diseño de la seccion productos*/
 .listadoPrecios {
   background-color: #4D9B4F;
-  margin: 0%;
 }
 
-.listadoPrecios img {
-  width: 40em;
-  margin: 1em;
+.listadoPrecios h4 {
+  color: #E5E8E8;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px;
+}
+
+#accordion {
+  padding: 20px;
+  background-color: #4D9B4F;
+}
+
+#accordion .card {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4D9B4F;
+}
+
+#accordion .card-header {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+#accordion .btnn {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  color: #E5E8E8;
+  background-color: #4D9B4F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#accordion .btnn:hover {
+  background-color: #E5E8E8;
+  color: #4D9B4F;
+}
+
+#accordion .card-body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+#accordion .foto {
+  width: 60%;
 }
 
 /* diseño de la seccion Contacto donde se encuentra el formulario*/
@@ -395,6 +457,7 @@ h3 {
   background-image: url(Imagenes/imgform.jpg);
   height: 100px;
   opacity: 70%;
+  margin: auto;
 }
 
 /* aplicando medidas a mi proyecto linear-gradient(to top, $colorv, $colorg)*/
