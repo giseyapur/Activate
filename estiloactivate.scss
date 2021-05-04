@@ -5,9 +5,9 @@
 /*Variabes definidas a utiizar*/
 $colorv: #4D9B4F;
 $colorg: #E5E8E8;
-$clarog:  lightgrey;
+$clarog: lightgrey;
 
-/*diseño index*/
+/*diseño INDEX*/
 
 body { display: grid;
     grid-template-areas: 
@@ -94,7 +94,7 @@ body { display: grid;
                   }
       
   
-  /* Agregado de flexbox a seccion recetas*/
+  /* Agregado de flexbox a seccion RECETAS*/
 
   @mixin stylereceta ($width) {font-size: 18px;
                       text-align: justify;
@@ -146,7 +146,7 @@ body { display: grid;
   .receta3 p { 
                @include stylereceta(900px);}
   
-  /* Agregado de flexbox a seccion pedidos*/
+  /* Agregado de flexbox a seccion PEDIDOS*/
   
     
   .pedidosPorMayor {display: flex;
@@ -158,16 +158,23 @@ body { display: grid;
         margin: 15px; }
 
    p { margin:15px;
-       color: $colorg ;
-      .btn { a {color: $colorg;
-            text-decoration: none;}}
-      .btn:hover {color: $colorv;
-                  background-color: $colorg;}}
+       color: $colorg;
+       text-align: center;
+       line-height: 30px;
+      .btn { margin-top: 100px; 
+             font-size: 20px; 
+            
+              a {color: $colorg;
+                text-decoration: none;}}
+
+      .btn:hover { a {color: $colorv;
+                      font-weight: bold;
+                      background-color: $colorg;}}}
     
   }
 
 
-  /* diseño de la seccion productos*/
+  /* diseño de la seccion PRODUCTOS*/
 
   .listadoPrecios { background-color: $colorv;
   h4 {color: $colorg;
@@ -229,7 +236,7 @@ body { display: grid;
 
     
   
-  /* diseño de la seccion Contacto donde se encuentra el formulario*/
+  /* diseño de la seccion CONTACTO donde se encuentra el formulario*/
 
   .cuerpoForm {background-color: $colorv;}
   

@@ -5,7 +5,7 @@
 }
 
 /*Variabes definidas a utiizar*/
-/*diseño index*/
+/*diseño INDEX*/
 body {
   display: -ms-grid;
   display: grid;
@@ -238,7 +238,7 @@ nav ul li {
   margin: 10px;
 }
 
-/* Agregado de flexbox a seccion recetas*/
+/* Agregado de flexbox a seccion RECETAS*/
 .sectionRecetas {
   background-color: #E5E8E8;
   display: -webkit-box;
@@ -333,7 +333,7 @@ h3 {
   margin: 15px;
 }
 
-/* Agregado de flexbox a seccion pedidos*/
+/* Agregado de flexbox a seccion PEDIDOS*/
 .pedidosPorMayor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,6 +355,13 @@ h3 {
 .pedidosPorMayor p {
   margin: 15px;
   color: #E5E8E8;
+  text-align: center;
+  line-height: 30px;
+}
+
+.pedidosPorMayor p .btn {
+  margin-top: 100px;
+  font-size: 20px;
 }
 
 .pedidosPorMayor p .btn a {
@@ -362,12 +369,13 @@ h3 {
   text-decoration: none;
 }
 
-.pedidosPorMayor p .btn:hover {
+.pedidosPorMayor p .btn:hover a {
   color: #4D9B4F;
+  font-weight: bold;
   background-color: #E5E8E8;
 }
 
-/* diseño de la seccion productos*/
+/* diseño de la seccion PRODUCTOS*/
 .listadoPrecios {
   background-color: #4D9B4F;
 }
@@ -440,7 +448,7 @@ h3 {
   width: 70%;
 }
 
-/* diseño de la seccion Contacto donde se encuentra el formulario*/
+/* diseño de la seccion CONTACTO donde se encuentra el formulario*/
 .cuerpoForm {
   background-color: #4D9B4F;
 }
