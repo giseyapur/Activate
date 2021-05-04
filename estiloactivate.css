@@ -334,12 +334,7 @@ h3 {
 }
 
 /* Agregado de flexbox a seccion pedidos*/
-.pedidosPorMayor img {
-  width: 500px;
-}
-
 .pedidosPorMayor {
-  background: #E5E8E8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +344,12 @@ h3 {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 5px;
+  background-color: #E5E8E8;
+}
+
+.pedidosPorMayor img {
+  width: 450px;
+  margin: 15px;
 }
 
 .pedidosPorMayor p {
@@ -441,6 +441,10 @@ h3 {
 }
 
 /* diseño de la seccion Contacto donde se encuentra el formulario*/
+.cuerpoForm {
+  background-color: #4D9B4F;
+}
+
 .formulario {
   font-family: 'Open Sans', sans-serif;
   padding: 10px;

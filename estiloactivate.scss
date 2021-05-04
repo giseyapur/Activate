@@ -148,20 +148,22 @@ body { display: grid;
   
   /* Agregado de flexbox a seccion pedidos*/
   
-  .pedidosPorMayor img { width: 500px; }
-  
-  .pedidosPorMayor { background: $colorg;
-                     display: flex;
-                     flex-direction: row;
-                     align-content: center;
-                     margin: 5px; 
-  
+    
+  .pedidosPorMayor {display: flex;
+                  flex-direction: row;
+                  align-content: center; 
+                  background-color: $colorg;
+
+  img { width: 450px;
+        margin: 15px; }
+
    p { margin:15px;
        color: $colorg ;
       .btn { a {color: $colorg;
             text-decoration: none;}}
       .btn:hover {color: $colorv;
                   background-color: $colorg;}}
+    
   }
 
 
@@ -228,6 +230,8 @@ body { display: grid;
     
   
   /* diseño de la seccion Contacto donde se encuentra el formulario*/
+
+  .cuerpoForm {background-color: $colorv;}
   
   .formulario { font-family: 'Open Sans', sans-serif;
                 padding: 10px;
