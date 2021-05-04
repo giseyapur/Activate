@@ -5,7 +5,7 @@
 /*Variabes definidas a utiizar*/
 $colorv: #4D9B4F;
 $colorg: #E5E8E8;
-
+$clarog:  lightgrey;
 
 /*diseño index*/
 
@@ -57,7 +57,7 @@ body { display: grid;
                         text-align: center;
                         margin: 20px;
                         background-color: $colorv;
-                        color: lightgrey; 
+                        color: $clarog; 
 	                      border: ridge; 
 	                      border-color: grey; 
 	                      padding: 25px; 
@@ -99,7 +99,7 @@ body { display: grid;
   @mixin stylereceta ($width) {font-size: 18px;
                       text-align: justify;
                       background-color: $colorv;
-                      color: lightgrey; 
+                      color: $clarog; 
                       border: ridge; 
                       border-color: grey; 
                       padding: 25px;
@@ -115,7 +115,7 @@ body { display: grid;
        margin:20px;
     }
 
-    h3 {color: grey;
+    h3 {color: gray;
       font-family: 'Open Sans', sans-serif;
       text-align: center;
       margin: 5px;}
@@ -156,19 +156,75 @@ body { display: grid;
                      align-content: center;
                      margin: 5px; 
   
-   p { margin:15px; }
+   p { margin:15px;
+       color: $colorg ;
+      .btn { a {color: $colorg;
+            text-decoration: none;}}
+      .btn:hover {color: $colorv;
+                  background-color: $color;}}
   }
+
+
   /* diseño de la seccion productos*/
 
+   #accordion {
+    padding: 20px;
+    background-color: $colorv;
+    
+    .card {width: 500px;
+           height: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: $colorv;
+           box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
 
-.listadoPrecios { background-color: $colorv;
-                  margin: 0%;
-                
-                img { width: 40em;
-                      margin: 1em;} }
+    /*.card-header { text-decoration: none;
+                   font-family: 'Open Sans', sans-serif;
+                   font-size: 16px;
+                   width: 100%;*/
+
+    }
+
+    .btnn { text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            background-color: $colorv;
+            align-content: center;
+            justify-content: center;
+            border: none;
+            border-radius: 5px;
+    }
+
+    .btnn:hover {
+        background-color: $colorv;
+        color: lightgray;
+    }
+
+    .card-body {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+
+    .foto {width: 50%;
+    }
+
+    .descarga { font-size: 14px;
+    }
+
   
   
-  /* diseño de la seccion Contacto aplicando gradientes*/
+  /* diseño de la seccion Contacto donde se encuentra el formulario*/
   
   .formulario { font-family: 'Open Sans', sans-serif;
                 padding: 10px;

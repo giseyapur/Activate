@@ -41,18 +41,119 @@
 
 	<main class="listadoPrecios">
 
+		<div class="decorado"></div>
 
-		
-		<img src="imagenes/precioSemillas.jpg" alt="Precio Semillas">
-		<img src="imagenes/precioCereales.jpg" alt="Precio Cereales">
-		<img src="imagenes/precioFrutos.jpg" alt="Precio Frutos">
-		<img src="imagenes/precioHarinas.jpg" alt="Precio Harinas">
-		<img src="imagenes/precioLegumbres.jpg" alt="Precio Legumbres">
-		<img src="imagenes/precioMix.jpg" alt="Precio Mix">
-		<img src="imagenes/precioEspecias.jpg" alt="Precio Especias">
+		<h3>LISTADO DE PRECIOS POR CATEGORIA</h3>
 
+		<!--Aplico acordeon para el listado de precios-->
 
-		
+		<div id="accordion">
+
+			<div class="card">
+				<div class="card-header" id="headingOne">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						SEMILLAS
+						</button>
+					</h5>
+				</div>
+
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioSemillas.jpg" alt="Precio Semillas" width="100%">
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							CEREALES
+						</button>
+					</h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioCereales.jpg" alt="foto" width="100%">
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							FRUTOS SECOS Y DISECADOS
+						</button>
+					</h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioFrutos.jpg" alt="foto" width="100%">
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="headingFour">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							LEGUMBRES
+						</button>
+					</h5>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioLegumbres.jpg" alt="foto" width="100%">
+						</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="headingFive">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							ESPECIAS
+						</button>
+					</h5>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioEspecias.jpg" alt="foto" width="100%">
+						</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="headingSeven">
+					<h5 class="mb-0">
+						<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+						MIX
+						</button>
+					</h5>
+				</div>
+
+				<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+					<div class="card-body">
+						<img class="foto" src="imagenes/precioMix.jpg" alt="foto" width="100%">
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingSeven">
+								<h5 class="mb-0">
+									<button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+									HARINAS
+									</button>
+								</h5>
+							</div>
+							<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+								<div class="card-body">
+									<img class="foto" src="imagenes/precioHarinas.jpg" alt="foto" width="100%">
+									</div>
+				</div>
+			</div>
+		</div>
+
 	</main>
 	<footer id="pieDePagina">
 
@@ -76,5 +177,12 @@
 			</div>
 		
 			</footer>
-	</body>
+	
+	<!-- script bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
 	</html>

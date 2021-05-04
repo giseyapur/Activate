@@ -354,6 +354,17 @@ h3 {
 
 .pedidosPorMayor p {
   margin: 15px;
+  color: #E5E8E8;
+}
+
+.pedidosPorMayor p .btn a {
+  color: #E5E8E8;
+  text-decoration: none;
+}
+
+.pedidosPorMayor p .btn:hover {
+  background-color: #E5E8E8;
+  color: #4D9B4F;
 }
 
 /* diseño de la seccion productos*/
@@ -367,7 +378,7 @@ h3 {
   margin: 1em;
 }
 
-/* diseño de la seccion Contacto aplicando gradientes*/
+/* diseño de la seccion Contacto donde se encuentra el formulario*/
 .formulario {
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
