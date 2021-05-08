@@ -260,8 +260,36 @@ body { display: grid;
   @media screen and ( min-width: 480px) and ( max-width: 780px)
   { body {} }*/
   
- @media screen and (max-width: 480px)
-  {* {margin: 0;
+  @media screen and (max-width: 480px)
+    { .pedidosPorMayor img { width: 200px;}      p { margin: 5px;          line-height: 10px;  .btn { margin-top: 50px;          font-size: 12px; }}  .header {   h1  {  font-size: 17px ;    }   .subTitulo { font-size: 11px;          }   .menu { font-size: 9px;           text: {align: center;               decoration: none; }}
+    .block__header { position: relative;                    width: 99,9%;                    height: 150px;   }    #logo img { width: 100px;               border-radius: 100%;                }      .iconos { a img { border-radius: 100%;               width: 20px; }}  }   #pieDePagina {img { width: 15px; }   .block__foot  { h5 { font-size: 9px ;}p { font-size: 9px;}}}
+  
+  #calesita {     padding: 6px; 
+  img { width:99%;    max-height: 15em;    opacity: 50%;                    }}
+      .prod__listas {  font-size: 12px;                   padding: 10px;                  margin: 5px;                   width: 140px;                 height: 130px;}  .prod__img { width: 160px;      height: 110px;      margin: 5px;             }  .block__descripcion { font-size: 11px;                      margin: 10px;                      padding: 12px;  }                              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*{* {margin: 0;
       padding: 0;}
       body {display: grid;
             grid-gap: 2px;
@@ -274,10 +302,10 @@ body { display: grid;
            "pieDePagina";  
             justify-content: center;
             grid-template-columns: repeat(6 2fr);
-            grid-template-rows: 1fr;
+            grid-template-rows: 1fr;}
             
   
-          }
+          
   
 
 .header { grid-area: header;
@@ -299,4 +327,4 @@ h2 { font-size: 20px;}
           font-size: 15px;
            }	
   #pieDePagina { grid-area: pieDePagina;
-                 font-size: 15px; }}
+                 font-size: 15px; }}*/
