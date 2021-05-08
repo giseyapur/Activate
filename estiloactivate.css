@@ -474,52 +474,92 @@ h3 {
 /* aplicando medidas a mi proyecto linear-gradient(to top, $colorv, $colorg)*/
 /*{body {  }}
   
-  @media screen and ( min-width: 480px) and ( max-width: 780px)
-  { body {} }*/
-@media screen and (max-width: 480px) {
-  .pedidosPorMayor img {
-    width: 200px;
+@media screen and ( min-width: 480px) and ( max-width: 780px)
+  { body {} }
+*/
+/*@media screen and (max-width: 480px) {
+    
+  .header {   
+    h1  {font-size: 17px ;
+    }   
+    .subTitulo {font-size: 11px;
+    }   
+    .menu {font-size: 9px;                         
+    }
   }
-  p {
-    margin: 5px;
-    line-height: 10px;
+    
+  .block__header {width: 99,9%;                    
+    height: 150px;   
+  } 
+
+  #logo img {width: 100px;               
   }
-  p .btn {
-    margin-top: 50px;
-    font-size: 10px;
+
+ .iconos { a img { border-radius: 100%;               
+  width: 20px; }}
+
+  #pieDePagina {img {width: 15px; 
+  }}
+
+  .block__foot  { h5 {font-size: 9px;}
+    p {font-size: 9px;}
   }
-  .header h1 {
-    font-size: 15px;
+
+  #calesita {padding: 6px; 
+
+    img {width:99%;    
+    max-height: 15em;    
+    }
   }
-  .header .subTitulo {
-    font-size: 10px;
+  
+  .prod__listas {font-size: 12px;                   
+    padding: 10px;                  
+    margin: 5px;                   
+    width: 140px;                 
+    height: 130px;
   }
-  .header .menu {
-    font-size: 8px;
-    text-align: center;
-    text-decoration: none;
+
+  .prod__img {width: 160px;      
+    height: 110px;      
+    margin: 5px;
   }
-  .header #logo img {
-    width: 100px;
-    border-radius: 100%;
-  }
-  .header .iconos a img {
-    border-radius: 100%;
-    width: 20px;
-  }
-  #pieDePagina img {
-    width: 15px;
-  }
-  #pieDePagina .block__foot h5 {
-    font-size: 10px;
-  }
-  #pieDePagina .block__foot h5 p {
-    font-size: 9px;
+
+  .block__descripcion {font-size: 11px;                      
+    margin: 10px;                      
+    padding: 12px;  
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*{* {margin: 0;
       padding: 0;}
+
+
+
+       .pedidosPorMayor img { width: 200px;     
+      p { margin: 5px;
+          line-height: 10px;  
+    .btn { margin-top: 50px;          
+           font-size: 12px; }}}
       body {display: grid;
             grid-gap: 2px;
             grid-template-columns: 1fr;
