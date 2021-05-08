@@ -1,6 +1,6 @@
 *{margin: 0;
   padding:0;
-    }
+}
 
 /*Variabes definidas a utiizar*/
 $colorv: #4D9B4F;
@@ -10,18 +10,25 @@ $clarog: lightgrey;
 /*diseño INDEX*/
 
 body { display: grid;
-    grid-template-areas: 
-    "header"
-    "inicio"
-    "pieDePagina"; }
-.header { grid-area: header }
-.inicio { grid-area: inicio;
-          background-color: $colorg; }
-#pieDePagina { grid-area: pieDePagina }
+  grid-template-areas: 
+  "header"
+  "inicio"
+  "pieDePagina"; 
+}
 
- /* Header comun para todas las secciones*/
+.header { grid-area: header 
+}
+
+.inicio { grid-area: inicio;
+  background-color: $colorg; 
+}
+
+#pieDePagina {grid-area: pieDePagina; 
+}
+
+/* Header comun para todas las secciones*/
   
- @import "header";
+@import "header";
   
 /* footer común para todas las secciones,por eso se encuentra en otra pestaña para poder editarla más rápido*/
   
@@ -29,133 +36,134 @@ body { display: grid;
   
 /* diseños para el body de la sección Inicio*/
 
-  /*calesita con bootstrap*/
+/*calesita con bootstrap*/
   
-  #calesita { background-color: $colorg;
-              padding: 10px;  
-              text-align: center;
+#calesita { background-color: $colorg;
+  padding: 10px;  
+  text-align: center;
+  img { width:90%;
+    max-height: 25em;
+    opacity: 50%;          
+  }
   
-        img { width:90%;
-              max-height: 25em;
-              opacity: 50%;          
-                    }
+  p { background: none;
+    color: darkgreen ; 
+    border: none; 
+    border-color: none;
+    font-size: 30px;
+    font-weight: bold; 
+  }
   
-        p { background: none;
-            color: darkgreen ; 
-            border: none; 
-            border-color: none;
-            font-size: 30px;
-            font-weight: bold; }
-  
-        h5 { font-size: 50px;
-             font-weight: bold;
-                  }}
+  h5 { font-size: 50px;
+   font-weight: bold;
+  }
+}
 
 /* pequeña reseña luego del carrousel*/  
   
-  .block__descripcion { font-size: 20px;
-                        text-align: center;
-                        margin: 20px;
-                        background-color: $colorv;
-                        color: $clarog; 
-	                      border: ridge; 
-	                      border-color: grey; 
-	                      padding: 25px; 
-	                      width: 99,7%;
-	                      font-size: 18px; }
+.block__descripcion { font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  background-color: $colorv;
+  color: $clarog; 
+  border: ridge; 
+  border-color: grey; 
+  padding: 25px; 
+  width: 99,7%;
+  font-size: 18px; 
+}
 
 /* listas de productos, como resumen*/
   
-  .prod { width: 99,9%;
-          background-color: $colorg;
-          display: grid;
-          grid-template-rows: 1fr;
-          grid-template-columns: repeat(4, 1fr);
+.prod { width: 99,9%;
+  background-color: $colorg;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
           
 
-          ul {color: $colorv; 
-            background: $colorg; 
-            font-weight: bold;  }
-              }
+  ul {color: $colorv; 
+    background: $colorg; 
+    font-weight: bold;  
+  }
+}
 
 .prod__listas { border: double; 
-             border-color: $colorv;
-             font-size: 20px;  
-             padding: 20px; 
-             margin: 10px;  
-             width: 280px;
-             height: 220px;}
-       
-  
+  border-color: $colorv;
+  font-size: 20px;  
+  padding: 20px; 
+  margin: 10px;  
+  width: 280px;
+  height: 220px;
+}
     
 .prod__img { width: 300px; 
-          height: 180px; 
-          margin: 10px;
-                  }
+  height: 180px; 
+  margin: 10px;
+}
       
   
-  /* Agregado de flexbox a seccion RECETAS*/
+/* Agregado de flexbox a seccion RECETAS*/
 
-  @mixin stylereceta ($width) {font-size: 18px;
-                      text-align: justify;
-                      background-color: $colorv;
-                      color: $clarog; 
-                      border: ridge; 
-                      border-color: grey; 
-                      padding: 25px;
-                      width: $width; 
-                      margin: 15px;
-    
-  }
+@mixin stylereceta ($width) {font-size: 18px;
+  text-align: justify;
+  background-color: $colorv;
+  color: $clarog; 
+  border: ridge; 
+  border-color: grey; 
+  padding: 25px;
+  width: $width; 
+  margin: 15px;  
+}
 
-  .sectionRecetas { background-color: $colorg;
-                    display:flex; }
+.sectionRecetas { background-color: $colorg;
+  display:flex; 
+}
          
- .mainRecetas img { width: 20%;
-       margin:20px;
-    }
+.mainRecetas img { width: 20%;
+  margin:20px;
+}
 
-    h3 {color: gray;
-      font-family: 'Open Sans', sans-serif;
-      text-align: center;
-      margin: 5px;}
+h3 {color: gray;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 5px;
+}
   
-  .receta1{
-      display: flex;
-      flex-direction: row;
-      align-items: center;   
+.receta1{ display: flex;
+  flex-direction: row;
+  align-items: center;   
   
-      p { 
-        @include stylereceta(700px);
-                }}
+  p { @include stylereceta(700px);
+  }
+}
     
-  .receta2 { display: flex;
-              flex-direction: row;
-              align-items: stretch;
-             
-      }
+.receta2 { display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
   
-  .receta2 p { 
-               @include stylereceta(1000px);}
+.receta2 p { @include stylereceta(1000px);
+}
   
-  .receta3 { display: flex;
-              flex-direction: row-reverse; ;
-              align-items: stretch;
-                }
+.receta3 { display: flex;
+  flex-direction: row-reverse; ;
+  align-items: stretch;
+}
   
-  .receta3 p { 
-               @include stylereceta(900px);}
+.receta3 p { @include stylereceta(900px);
+}
   
-  /* Agregado de flexbox a seccion PEDIDOS*/
+/* Agregado de flexbox a seccion PEDIDOS*/
   
     
-  .pedidosPorMayor {display: flex;
-                  flex-direction: row;
-                  align-content: center; 
-                  background-color: $colorg;
+.pedidosPorMayor {display: flex;
+  flex-direction: row;
+  align-content: center; 
+  background-color: $colorg;
 
   img { width: 450px;
-        margin: 15px; }
+  margin: 15px; }
 
    p { margin:15px;
        color: $colorg;
@@ -260,9 +268,9 @@ body { display: grid;
   @media screen and ( min-width: 480px) and ( max-width: 780px)
   { body {} }*/
   
-  @media screen and (max-width: 480px)
-
-  { .pedidosPorMayor img { width: 200px;}      
+@media screen and (max-width: 480px) {
+    
+   .pedidosPorMayor img { width: 200px;}      
       p { margin: 5px;
           line-height: 10px;  
     .btn { margin-top: 50px;          
@@ -272,7 +280,7 @@ body { display: grid;
   .subTitulo { font-size: 11px;}   
   .menu { font-size: 9px;           
           text: {align: center;               
-          decoration: none; }}
+           }}
     
   .block__header { position: relative;                    
                    width: 99,9%;                    
