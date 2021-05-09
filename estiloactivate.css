@@ -477,31 +477,22 @@ h3 {
   { body {} }
 */
 @media screen and (max-width: 480px) {
-  .pedidosPorMayor img {
-    width: 200px;
-  }
-  p {
-    margin: 5px;
-    line-height: 10px;
-  }
-  p .btn {
-    margin-top: 50px;
-    font-size: 10px;
-  }
   /*Aplicamos queris al header*/
   .header h1 {
     font-size: 18px;
+    margin: 10px 200px;
   }
   .header .subTitulo {
     font-size: 12px;
-    margin: 5px 100px;
+    margin: 8px 100px;
   }
   .header .menu {
-    font-size: 8px;
+    font-size: 9px;
   }
   .header .menu li a {
     display: block;
-    padding: 0;
+    padding: 0%;
+    margin: 0%;
   }
   .header .header {
     height: 150px;
@@ -510,8 +501,9 @@ h3 {
     width: 100px;
   }
   .header .iconos a img {
-    border-radius: 100%;
     width: 20px;
+    margin: 1px;
+    position: absolute;
   }
   /*Aplicamos queris al footer*/
   .foot h5 {
@@ -557,53 +549,39 @@ h3 {
     padding: 10px;
     width: 95%;
   }
+  /*Aplicamos queris a la sección PRODUCTOS*/
+  .listadoPrecios .card-header {
+    font-size: 10px;
+  }
+  .listadoPrecios .btnn {
+    font-size: 10px;
+    width: 90%;
+    height: 30px;
+  }
+  .listadoPrecios .foto {
+    width: 90%;
+  }
+  /*Aplicamos queris a PEDIDOS*/
+  .pedidosPorMayor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pedidosPorMayor img {
+    width: 350px;
+    margin: 5px;
+  }
+  .pedidosPorMayor p {
+    margin: 5px;
+  }
+  .pedidosPorMayor p .btn {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  /*Aplicando queris a la sección RECETAS*/
 }
-
-/*{* {margin: 0;
-      padding: 0;}
-
-
-
-       .pedidosPorMayor img { width: 200px;     
-      p { margin: 5px;
-          line-height: 10px;  
-    .btn { margin-top: 50px;          
-           font-size: 12px; }}}
-      body {display: grid;
-            grid-gap: 2px;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-           "header" 
-           "calesita"
-           "descripcion"
-           "prod"
-           "pieDePagina";  
-            justify-content: center;
-            grid-template-columns: repeat(6 2fr);
-            grid-template-rows: 1fr;}
-            
-  
-          
-  
-
-.header { grid-area: header;
-
-h1 {font-size: 25px;}
-h2 { font-size: 20px;}
-.menu { font-size: 15px;}
-#logo img { width: 100px;}}
-.iconos a img { width: 30px ;}
-
-.formulario { font-size: 10px;}
-
-  .calesita { grid-area: calesita;
-              font-size: 15px; }
-  
-  .descripcion { grid-area: descripcion;
-                 font-size: 10px; }
-  .prod { grid-area: prod;
-          font-size: 15px;
-           }	
-  #pieDePagina { grid-area: pieDePagina;
-                 font-size: 15px; }}*/
 /*# sourceMappingURL=estiloactivate.css.map */
