@@ -583,5 +583,47 @@ h3 {
     font-size: 15px;
   }
   /*Aplicando queris a la sección RECETAS*/
+  .mainRecetas img {
+    width: 20%;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 12px;
+    margin: 2px;
+  }
+  .receta1 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 350px;
+  }
+  .receta2 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 500px;
+  }
+  .receta3 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 450px;
+  }
+  /*Aplicando queris a la sección CONTACTO*/
+  .formulario {
+    font-size: 11px;
+  }
+  .formulario h3 {
+    font-size: 15px;
+  }
+  .formulario h5 {
+    font-size: 13px;
+  }
+  .decorado {
+    height: 60px;
+  }
 }
 /*# sourceMappingURL=estiloactivate.css.map */

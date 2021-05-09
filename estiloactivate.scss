@@ -361,6 +361,36 @@ h3 {color: gray;
   }
 
   /*Aplicando queris a la sección RECETAS*/
+  @mixin stylereceta ($width) {font-size: 9px;
+    padding: 2px;
+    margin: 2px;  
+    width: $width;
+  }
   
+ .mainRecetas img { width: 20%;
+    margin:5px;
+  }
+  h1 {font-size: 14px;}
+  
+  h3 {font-size: 12px;
+    margin: 2px;
+  }
+    
+  .receta1  p { @include stylereceta(350px);
+    }
+  
+  .receta2 p { @include stylereceta (500px);
+  }
+    
+  .receta3 p { @include stylereceta(450px);
+  }
 
+   /*Aplicando queris a la sección CONTACTO*/
+   .formulario { font-size: 11px;
+      h3 {font-size: 15px;}
+      h5 {font-size: 13px;}
+    }
+  
+    .decorado {height: 60px;}
+    
 }
