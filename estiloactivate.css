@@ -470,6 +470,7 @@ h3 {
   opacity: 70%;
 }
 
+/* Hacemos responsive para tablets y celulares nuestro proyecto*/
 @media screen and (min-width: 481px) and (max-width: 786px) {
   /*Aplicamos queris al header*/
   .header h1 {
@@ -557,6 +558,9 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .pedidosPorMayor img {
     width: 450px;
@@ -703,9 +707,12 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .pedidosPorMayor img {
-    width: 350px;
+    width: 300px;
     margin: 5px;
   }
   .pedidosPorMayor p {
