@@ -470,17 +470,155 @@ h3 {
   opacity: 70%;
 }
 
-/* aplicando medidas a mi proyecto linear-gradient(to top, $colorv, $colorg)*/
-/*{body {  }}
-  
-@media screen and ( min-width: 481px) and ( max-width: 780px)
-  { body {} }
-*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  /*Aplicamos queris al header*/
+  .header h1 {
+    font-size: 25px;
+    margin: 20px 200px;
+  }
+  .header .subTitulo {
+    font-size: 17px;
+    margin: 20px 200px;
+  }
+  .header .menu {
+    font-size: 15px;
+  }
+  .header .menu li a {
+    padding: 0%;
+    margin: 1px;
+  }
+  .header #logo img {
+    width: 120px;
+  }
+  .header .iconos a img {
+    width: 25px;
+    margin: 1px;
+  }
+  /*Aplicamos queris al footer*/
+  .foot h5 {
+    font-size: 13px;
+  }
+  .foot p {
+    font-size: 12px;
+  }
+  .foot img {
+    width: 20px;
+  }
+  /*Aplicamos queris al cuerpo de INDEX*/
+  #calesita {
+    padding: 6px;
+  }
+  #calesita img {
+    width: 99%;
+    max-height: 15em;
+  }
+  .prod {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .prod__listas {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    height: 120px;
+  }
+  .prod__img {
+    width: 170px;
+    height: 110px;
+    margin: 2px;
+  }
+  .block__descripcion {
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 98%;
+  }
+  /*Aplicamos queris a la sección PRODUCTOS*/
+  .listadoPrecios h4 {
+    font-size: 18px;
+  }
+  .accordion h5 {
+    font-size: 10px;
+  }
+  .accordion .foto {
+    width: 90%;
+  }
+  /*Aplicamos queris a PEDIDOS*/
+  .pedidosPorMayor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pedidosPorMayor img {
+    width: 450px;
+    margin: 5px;
+  }
+  .pedidosPorMayor p {
+    margin: 5px;
+  }
+  .pedidosPorMayor p .btn {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  /*Aplicando queris a la sección RECETAS*/
+  .mainRecetas img {
+    width: 20%;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 2px;
+  }
+  .receta1 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 350px;
+  }
+  .receta2 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 500px;
+  }
+  .receta3 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 450px;
+  }
+  /*Aplicando queris a la sección CONTACTO*/
+  .formulario {
+    font-size: 14px;
+  }
+  .formulario h3 {
+    font-size: 18px;
+  }
+  .formulario h5 {
+    font-size: 16px;
+  }
+  .decorado {
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   /*Aplicamos queris al header*/
   .header h1 {
     font-size: 18px;
-    margin: 10px 200px;
+    margin: 10px 100px;
   }
   .header .subTitulo {
     font-size: 12px;
@@ -494,14 +632,11 @@ h3 {
     padding: 0%;
     margin: 0%;
   }
-  .header .header {
-    height: 150px;
-  }
   .header #logo img {
-    width: 100px;
+    width: 80px;
   }
   .header .iconos a img {
-    width: 20px;
+    width: 18px;
     margin: 1px;
     position: absolute;
   }
@@ -520,7 +655,7 @@ h3 {
     padding: 6px;
   }
   #calesita img {
-    width: 95%;
+    width: 99%;
     max-height: 15em;
   }
   .prod {
@@ -547,18 +682,16 @@ h3 {
     font-size: 11px;
     margin: 5px;
     padding: 10px;
-    width: 95%;
+    width: 98%;
   }
   /*Aplicamos queris a la sección PRODUCTOS*/
-  .listadoPrecios .card-header {
+  .listadoPrecios h4 {
+    font-size: 15px;
+  }
+  .accordion h5 {
     font-size: 10px;
   }
-  .listadoPrecios .btnn {
-    font-size: 10px;
-    width: 90%;
-    height: 30px;
-  }
-  .listadoPrecios .foto {
+  .accordion .foto {
     width: 90%;
   }
   /*Aplicamos queris a PEDIDOS*/
@@ -598,19 +731,19 @@ h3 {
     font-size: 9px;
     padding: 2px;
     margin: 2px;
-    width: 350px;
+    width: 280px;
   }
   .receta2 p {
     font-size: 9px;
     padding: 2px;
     margin: 2px;
-    width: 500px;
+    width: 430px;
   }
   .receta3 p {
     font-size: 9px;
     padding: 2px;
     margin: 2px;
-    width: 450px;
+    width: 380px;
   }
   /*Aplicando queris a la sección CONTACTO*/
   .formulario {
