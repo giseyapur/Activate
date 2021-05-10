@@ -1,0 +1,18 @@
+/*diseño index*/
+
+* {margin: 5px; padding: auto }
+
+h1 	{color: #4D9B4F;
+font-style:  sans-serif;
+ text-align:  center;}
+.subTitulo {color: grey;}
+
+.menu { color: grey; font-weight: lighter; list-style-type: none   }
+
+ul {color:#4D9B4F;  font-weight: bold; list-style-type: circle  }
+
+p { color: lightgrey;   }
+
+table { border: 3px solid; }
+
+th { background: lightgrey; color: #4D9B4F ; }

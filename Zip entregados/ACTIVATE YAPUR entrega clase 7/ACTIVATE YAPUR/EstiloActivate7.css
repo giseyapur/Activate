@@ -1,0 +1,272 @@
+/*diseño index*/
+*{margin: 0;
+  padding:0;}
+
+  body { display: grid;
+         grid-template-areas: 
+         "header"
+         "inicio"
+         "pieDePagina"; }
+ .header { grid-area: header }
+ .inicio { grid-area: inicio }
+ #pieDePagina { grid-area: pieDePagina }
+
+/* Header comun para todas las secciones*/
+
+h1	{color: #4D9B4F;
+	font-family: 'Montserrat', 
+	sans-serif;
+	text-align: center; 
+	margin: 15px; 
+	}
+
+.subTitulo {color: grey;
+	        font-family: 'Open Sans', sans-serif;
+	        text-align: center; margin: 15px;}
+
+header {background: #E5E8E8;
+		position: relative; 
+		width: 99,9%; 
+		height: 215px; 
+		border: solid; 
+		border-color: grey;
+		}
+
+#logo { position:absolute;
+		top:7px;
+		left:7px; } 
+
+#logo img { width: 200px }
+
+.iconos {position: relative; 
+	     float: right;
+	     margin: 25px }
+
+.iconos a img { border-radius: 100%;
+                width: 50px }
+
+.face { margin: 5px; 
+	    padding: 5px; 
+		text-decoration: none;  }
+
+.insta {  margin: 5px; 
+	      padding: 5px; 
+		text-decoration: none; }
+
+nav ul li { display: inline; 
+	        margin:15px  }
+
+.menu { color: grey; 
+	    font-weight: lighter; 
+	    text-align: center; 
+		text-decoration: none; 
+		font-size: 20px;
+		 }
+
+/*acomodar mejor el menu con fuentes y colores*/
+.menu li a {display: inline; 
+	        text-decoration: none;
+	        font-style: 'Open Sans', sans-serif;
+		    font-color: #4D9B4F ;}
+
+/* footer común para todas las secciones*/
+
+footer { background: #4D9B4F; 
+	     width: 99,9%; 
+	     height: 20% }
+
+p { background:#4D9B4F; 
+	color: lightgrey; 
+	border: ridge; 
+	border-color: grey; 
+	padding: 25px; 
+	width: 99,7% }
+
+table { border: 3px solid; }
+
+th { background: lightgrey; 
+	 color: #4D9B4F ; }
+
+#pieDePagina { background-color: #4D9B4F; 
+	           width: 99,9%; 
+	           height: 180px; 
+	           border: solid; 
+	           border-color: grey; }
+
+.foot { float: left;}
+
+.foot p { border: none;}
+
+.foot1 { float: right;}
+
+.foot1 p { border: none;}
+
+
+/* diseños para el body de la sección Inicio*/
+
+/* Le quito lo siguiente por indicacion de mi tutor y realizo grid horizontal en la siguiente seccion
+.inicio {display: grid;
+	background: #E5E8E8; 
+	grid-template-areas: 
+         "calesita calesita calesita calesita"
+         "descripcion descripcion descripcion descripcion"
+         "lista1 img1 lista2 img2";
+    justify-content: center;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 200px 100px 200px;
+    grid-row-gap: 10px;
+    grid-column-gap: 1px;
+    }
+
+.calesita { grid-area: calesita; }
+
+.descripcion { grid-area: descripcion;}
+
+.lista1 { grid-area: lista1;}
+
+.img1 {grid-area: img1;}
+
+.lista2{ grid-area: lista2}
+
+.img2 {grid-area: img2;}*/
+
+.calesita {height: 30vh; 
+	       background: grey;
+	       width: 99,9%;}
+
+.prod { width: 99,9%;
+        background-color: #E5E8E8;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+         }
+
+ul {color:#4D9B4F; 
+	background: #E5E8E8; 
+	font-weight: bold;  }
+
+.lista1 { border: double; 
+	      border-color: #4D9B4F ; 
+	      padding: 20px; 
+	      margin: 10px;  
+	      width: 300px;
+		  height: 140px;
+		  font-size: 20px; 
+		    }
+
+.img1 { width: 300px; 
+	    height: 180px; 
+	    margin: 10px;
+	    }
+
+.lista2 { border: double; 
+	      border-color: #4D9B4F ; 
+	      padding: 20px; 
+	      margin: 10px; 
+	      width: 300px;
+		  height: 140px; 
+		  font-size: 20px;
+		 }
+
+.img2 { width: 300px; 
+	    height: 180px; 
+	    margin: 10px;
+	    }
+
+
+
+/* Agregado de flexbox a seccion recetas*/
+
+.sectionRecetas {background: #E5E8E8;} }
+
+.mainRecetas{
+	display: flex;
+	margin: 20px;
+	justify-content: center;
+	}
+
+.mainRecetas img {
+	width: 20%;
+	margin:20px;
+	}
+
+.receta1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #E5E8E8 ;
+	}
+
+.receta1 p { width: 700px; 
+	         font-size: 20px;
+	         text-align: justify;
+			  }
+
+h3 {color: grey;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    margin: 5px;}
+
+.receta2 { display: flex;
+	        flex-direction: row;
+	        align-items: stretch;
+	        background-color: #E5E8E8 ;
+	}
+
+.receta2 p { margin: 15px;
+             width: 1000px;
+             font-size: 20px;
+             text-align: justify;}
+
+.receta3 { display: flex;
+	        flex-direction: row-reverse; ;
+	        align-items: stretch;
+	        background-color: #E5E8E8 ;
+              }
+
+.receta3 p { margin: 15px;
+             width: 1000px;
+             font-size: 20px;
+             text-align: justify;}
+
+/* Agregado de flexbox a seccion pedidos*/
+
+.pedidosPorMayor img { width: 400px }
+
+.pedidosPorMayor { background: #E5E8E8;
+				display: flex;
+				flex-direction: row;
+				align-content: center;
+				margin: 5px; }
+
+.pedidosPorMayor p { margin:15px; } 
+
+/* aplicando medidas a mi proyecto*/
+
+/*{body {  }}
+
+@media screen and ( min-width: 480px) and ( max-width: 780px)
+{ body {} }*/
+
+@media screen and (max-width: 480px)
+{body {display: grid;
+		grid-template-areas:
+	     "header" 
+         "calesita"
+         "prod"
+         "pieDePagina";  
+    justify-content: center;
+    grid-template-columns: repeat(6; 2fr);
+    grid-template-rows: 1fr;
+    font-size: 10px;
+
+        }}
+
+.header { grid-area: header }
+.inicio { grid-area: inicio }
+.prod { grid-area: prod }	
+#pieDePagina { grid-area: pieDePagina }
+
+
+
+
