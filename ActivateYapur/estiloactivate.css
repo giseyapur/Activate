@@ -9,7 +9,7 @@
 body {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "inicio" "pieDePagina";
+      grid-template-areas: "header" "inicio" "pieDePagina";
 }
 
 .header {
