@@ -1,0 +1,769 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Variabes definidas a utiizar*/
+/*diseño INDEX*/
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "inicio" "pieDePagina";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.inicio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: inicio;
+  background-color: #E5E8E8;
+}
+
+#pieDePagina {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pieDePagina;
+}
+
+/* Header comun para todas las secciones*/
+h1 {
+  color: #4D9B4F;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 20px 200px;
+}
+
+.subTitulo {
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 20px 200px;
+}
+
+.menu {
+  font-weight: lighter;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li a {
+  display: inline;
+  text-decoration: none;
+  color: #4D9B4F;
+  padding: 10px;
+}
+
+.menu a:hover {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  color: lightgray;
+  background-color: #4D9B4F;
+  border-radius: 5px;
+}
+
+.header {
+  background: #E5E8E8;
+  position: relative;
+  width: 99,9%;
+  height: 215px;
+  border: solid;
+  border-color: grey;
+}
+
+#logo {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+#logo img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.iconos {
+  position: relative;
+  float: right;
+  margin: 25px;
+}
+
+.iconos a img {
+  border-radius: 100%;
+  width: 50px;
+}
+
+.face {
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.insta {
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+/* footer común para todas las secciones,por eso se encuentra en otra pestaña para poder editarla más rápido*/
+#pieDePagina {
+  background-color: #4D9B4F;
+  width: 99,9%;
+  height: auto;
+  border: solid;
+  border-color: grey;
+}
+
+.foot {
+  background-color: #4D9B4F;
+  color: lightgrey;
+  border: none;
+  border-color: grey;
+  padding: 10px;
+  width: 99,7%;
+}
+
+.foot h5 {
+  color: lightgray;
+  font-size: 16px;
+  text-decoration: blink;
+}
+
+.foot img {
+  width: 35px;
+}
+
+.foot p {
+  font-size: 15px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.foot a:hover {
+  text-decoration: underline;
+}
+
+.foot .col1 {
+  text-align: right;
+}
+
+/* diseños para el body de la sección Inicio*/
+/*calesita con bootstrap*/
+#calesita {
+  background-color: #E5E8E8;
+  padding: 10px;
+  text-align: center;
+}
+
+#calesita img {
+  width: 90%;
+  max-height: 25em;
+  opacity: 50%;
+}
+
+#calesita p {
+  background: none;
+  color: darkgreen;
+  border: none;
+  border-color: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#calesita h5 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* pequeña reseña luego del carrousel*/
+.block__descripcion {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  background-color: #4D9B4F;
+  color: lightgrey;
+  border: ridge;
+  border-color: grey;
+  padding: 25px;
+  width: 99,7%;
+}
+
+/* listas de productos, como resumen*/
+.prod {
+  width: 99,9%;
+  background-color: #E5E8E8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.prod ul {
+  color: #4D9B4F;
+  background: #E5E8E8;
+  font-weight: bold;
+}
+
+.prod__listas {
+  border: double;
+  border-color: #4D9B4F;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 280px;
+  height: 220px;
+}
+
+.prod__img {
+  width: 300px;
+  height: 180px;
+  margin: 10px;
+}
+
+/* Agregado de flexbox a seccion RECETAS*/
+.sectionRecetas {
+  background-color: #E5E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainRecetas img {
+  width: 20%;
+  margin: 20px;
+}
+
+h3 {
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 5px;
+}
+
+.receta1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.receta1 p {
+  font-size: 18px;
+  text-align: justify;
+  background-color: #4D9B4F;
+  color: lightgrey;
+  border: ridge;
+  border-color: grey;
+  padding: 25px;
+  width: 700px;
+  margin: 15px;
+}
+
+.receta2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.receta2 p {
+  font-size: 18px;
+  text-align: justify;
+  background-color: #4D9B4F;
+  color: lightgrey;
+  border: ridge;
+  border-color: grey;
+  padding: 25px;
+  width: 1000px;
+  margin: 15px;
+}
+
+.receta3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.receta3 p {
+  font-size: 18px;
+  text-align: justify;
+  background-color: #4D9B4F;
+  color: lightgrey;
+  border: ridge;
+  border-color: grey;
+  padding: 25px;
+  width: 900px;
+  margin: 15px;
+}
+
+/* Agregado de flexbox a seccion PEDIDOS*/
+.pedidosPorMayor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #E5E8E8;
+}
+
+.pedidosPorMayor img {
+  width: 450px;
+  margin: 15px;
+}
+
+.pedidosPorMayor p {
+  margin: 15px;
+  color: #E5E8E8;
+  text-align: center;
+  line-height: 30px;
+}
+
+.pedidosPorMayor p .btn {
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.pedidosPorMayor p .btn a {
+  color: #E5E8E8;
+  text-decoration: none;
+}
+
+.pedidosPorMayor p .btn:hover a {
+  color: #4D9B4F;
+  font-weight: bold;
+  background-color: #E5E8E8;
+}
+
+/* diseño de la seccion PRODUCTOS*/
+.listadoPrecios {
+  background-color: #4D9B4F;
+}
+
+.listadoPrecios h4 {
+  color: #E5E8E8;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px;
+}
+
+#accordion {
+  padding: 20px;
+  background-color: #4D9B4F;
+}
+
+#accordion .card {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4D9B4F;
+}
+
+#accordion .card-header {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+#accordion .btnn {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 80%;
+  height: 40px;
+  padding: 5px;
+  color: #E5E8E8;
+  background-color: #4D9B4F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#accordion .btnn:hover {
+  background-color: #E5E8E8;
+  color: #4D9B4F;
+}
+
+#accordion .card-body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+#accordion .foto {
+  width: 70%;
+}
+
+/* diseño de la seccion CONTACTO donde se encuentra el formulario*/
+.cuerpoForm {
+  background-color: #4D9B4F;
+}
+
+.formulario {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  text-align: center;
+  background-color: #4D9B4F;
+  color: #E5E8E8;
+}
+
+.formulario h3 {
+  color: #E5E8E8;
+}
+
+.decorado {
+  background-image: url(Imagenes/imgform.jpg);
+  height: 100px;
+  opacity: 70%;
+}
+
+/* Hacemos responsive para tablets y celulares nuestro proyecto*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  /*Aplicamos queris al header*/
+  .header h1 {
+    font-size: 25px;
+    margin: 20px 200px;
+  }
+  .header .subTitulo {
+    font-size: 17px;
+    margin: 20px 200px;
+  }
+  .header .menu {
+    font-size: 15px;
+  }
+  .header .menu li a {
+    padding: 0%;
+    margin: 1px;
+  }
+  .header #logo img {
+    width: 120px;
+  }
+  .header .iconos a img {
+    width: 25px;
+    margin: 1px;
+  }
+  /*Aplicamos queris al footer*/
+  .foot h5 {
+    font-size: 13px;
+  }
+  .foot p {
+    font-size: 12px;
+  }
+  .foot img {
+    width: 20px;
+  }
+  /*Aplicamos queris al cuerpo de INDEX*/
+  #calesita {
+    padding: 6px;
+  }
+  #calesita img {
+    width: 99%;
+    max-height: 15em;
+  }
+  .prod {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .prod__listas {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    height: 120px;
+  }
+  .prod__img {
+    width: 170px;
+    height: 110px;
+    margin: 2px;
+  }
+  .block__descripcion {
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 98%;
+  }
+  /*Aplicamos queris a la sección PRODUCTOS*/
+  .listadoPrecios h4 {
+    font-size: 18px;
+  }
+  .accordion h5 {
+    font-size: 10px;
+  }
+  .accordion .foto {
+    width: 90%;
+  }
+  /*Aplicamos queris a PEDIDOS*/
+  .pedidosPorMayor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pedidosPorMayor img {
+    width: 450px;
+    margin: 5px;
+  }
+  .pedidosPorMayor p {
+    margin: 5px;
+  }
+  .pedidosPorMayor p .btn {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  /*Aplicando queris a la sección RECETAS*/
+  .mainRecetas img {
+    width: 20%;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 2px;
+  }
+  .receta1 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 350px;
+  }
+  .receta2 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 500px;
+  }
+  .receta3 p {
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px;
+    width: 450px;
+  }
+  /*Aplicando queris a la sección CONTACTO*/
+  .formulario {
+    font-size: 14px;
+  }
+  .formulario h3 {
+    font-size: 18px;
+  }
+  .formulario h5 {
+    font-size: 16px;
+  }
+  .decorado {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*Aplicamos queris al header*/
+  .header h1 {
+    font-size: 18px;
+    margin: 10px 100px;
+  }
+  .header .subTitulo {
+    font-size: 12px;
+    margin: 8px 100px;
+  }
+  .header .menu {
+    font-size: 9px;
+  }
+  .header .menu li a {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+  }
+  .header #logo img {
+    width: 80px;
+  }
+  .header .iconos a img {
+    width: 18px;
+    margin: 1px;
+    position: absolute;
+  }
+  /*Aplicamos queris al footer*/
+  .foot h5 {
+    font-size: 10px;
+  }
+  .foot p {
+    font-size: 9px;
+  }
+  .foot img {
+    width: 15px;
+  }
+  /*Aplicamos queris al cuerpo de INDEX*/
+  #calesita {
+    padding: 6px;
+  }
+  #calesita img {
+    width: 99%;
+    max-height: 15em;
+  }
+  .prod {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .prod__listas {
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 110px;
+  }
+  .prod__img {
+    width: 170px;
+    height: 110px;
+    margin: 2px;
+  }
+  .block__descripcion {
+    font-size: 11px;
+    margin: 5px;
+    padding: 10px;
+    width: 98%;
+  }
+  /*Aplicamos queris a la sección PRODUCTOS*/
+  .listadoPrecios h4 {
+    font-size: 15px;
+  }
+  .accordion h5 {
+    font-size: 10px;
+  }
+  .accordion .foto {
+    width: 90%;
+  }
+  /*Aplicamos queris a PEDIDOS*/
+  .pedidosPorMayor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pedidosPorMayor img {
+    width: 300px;
+    margin: 5px;
+  }
+  .pedidosPorMayor p {
+    margin: 5px;
+  }
+  .pedidosPorMayor p .btn {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  /*Aplicando queris a la sección RECETAS*/
+  .mainRecetas img {
+    width: 20%;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 12px;
+    margin: 2px;
+  }
+  .receta1 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 280px;
+  }
+  .receta2 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 430px;
+  }
+  .receta3 p {
+    font-size: 9px;
+    padding: 2px;
+    margin: 2px;
+    width: 380px;
+  }
+  /*Aplicando queris a la sección CONTACTO*/
+  .formulario {
+    font-size: 11px;
+  }
+  .formulario h3 {
+    font-size: 15px;
+  }
+  .formulario h5 {
+    font-size: 13px;
+  }
+  .decorado {
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=estiloactivate.css.map */

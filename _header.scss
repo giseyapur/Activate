@@ -1,0 +1,67 @@
+h1  {color: $colorv;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 	
+    margin: 20px 200px; 
+}
+  
+.subTitulo {color: grey;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    margin: 20px 200px;
+}
+  
+.menu { font: { weight: lighter; 
+    size: 18px;
+    family: 'Open Sans', sans-serif;}
+    text: {align: center;
+    decoration: none; }
+    li a {display: inline; 
+        text-decoration: none;
+        color: $colorv;
+        padding: 10px;
+    }
+    
+    a:hover { text-decoration: bold;
+        color: lightgray;
+        background-color: $colorv;
+        border-radius: 5px;
+    }
+}
+  
+.header {background: $colorg;
+    position: relative; 
+    width: 99,9%; 
+    height: 215px; 
+    border: solid; 
+    border-color: grey;
+}
+  
+#logo { position: absolute ;
+    top:7px;
+    left:7px; 
+} 
+  
+#logo img { width: 200px;
+    border-radius: 100%;
+}
+  
+.iconos {position: relative; 
+    float: right;
+    margin: 25px; 
+  
+  a img { border-radius: 100%;
+    width: 50px; }
+}
+  
+.face { margin: 5px; 
+    padding: 5px; 
+    text-decoration: none; 
+}
+  
+.insta {  margin: 5px; 
+    padding: 5px; 
+    text-decoration: none;
+}
+  
+nav ul li { display: inline; 
+    margin:15px;  }
